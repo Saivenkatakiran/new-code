@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('check out') {
+            steps {
+                echo 'check in'
+            }
+        }
+stage('Build') {
+            steps {
+                echo 'success'
+    }
+}
+stage('Test') {
+            steps {
+                echo 'Failure'
+             }
+          }
+      }
+   }
+
